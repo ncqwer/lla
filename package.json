@@ -1,5 +1,5 @@
 {
-  "name": "llaFramework",
+  "name": "lla",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -85,7 +85,7 @@
   },
   "scripts": {
     "start": "cd playground && node scripts/start.js",
-    "build": "cd playground && node scripts/build.js",
+    "build": "rollup --config ./config/config.js && cd playground && node scripts/build.js",
     "test": "cd playground && node scripts/test.js",
     "pkgcreate": "yarn lerna create",
     "pkgadd": "yarn leran add",
